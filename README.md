@@ -1,5 +1,5 @@
 # cog
-https://cog.run/
+[https://cog.run/](https://github.com/replicate/cog)
 
 ```code
 sudo curl -o /usr/local/bin/cog -L "https://github.com/replicate/cog/releases/latest/download/cog_$(uname -s)_$(uname -m)"
