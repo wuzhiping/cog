@@ -5,6 +5,10 @@
 sudo curl -o /usr/local/bin/cog -L "https://github.com/replicate/cog/releases/latest/download/cog_$(uname -s)_$(uname -m)"
 sudo chmod +x /usr/local/bin/cog
 
+mkdir demo
+cd demo
+cog init
+
 cog predict -i image=123
 
 cog serve -p 8080
