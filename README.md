@@ -16,4 +16,7 @@ curl -X POST   -H "Content-Type: application/json"   -d $'{
     "webhook": "https://www.example.com/oauth2/ip"
 
     }'   http://127.0.0.1:8080/predictions
+
+cog build -t my-model-img
+docker run --rm -it -p 8080:5000 --gpus all my-model-img
 ```
