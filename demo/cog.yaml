@@ -1,0 +1,8 @@
+build:
+  gpu: false
+  system_packages:
+    - "vim"
+  python_version: "3.12"
+  python_packages:
+    - "langchain"
+predict: "predict.py:Predictor"
