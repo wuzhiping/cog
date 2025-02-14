@@ -22,5 +22,5 @@ curl -X POST   -H "Content-Type: application/json"   -d $'{
     }'   http://127.0.0.1:8080/predictions
 
 cog build -t my-model-img
-docker run --rm -it -p 8080:5000 --gpus all my-model-img
+docker run --rm -it -p 8080:5000 --gpus all my-model-img python -m cog.server.http --threads=10
 ```
