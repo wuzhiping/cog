@@ -9,6 +9,8 @@ mkdir demo
 cd demo
 cog init
 
+docker rmi $(docker images | grep "none" | awk '{print $3}')
+
 cog predict -i image=123
 
 cog serve -p 8080
