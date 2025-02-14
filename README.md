@@ -17,8 +17,8 @@ curl -X POST   -H "Content-Type: application/json"   -d $'{
     "input": {
       "image": "zero-shot voice clone"
     },
-    "webhook": "https://www.example.com/oauth2/ip"
-
+    "webhook": "https://www.example.com/oauth2/ip",
+    "webhook_events_filter": ["start", "log","output","completed"]
     }'   http://127.0.0.1:8080/predictions
 
 cog build -t my-model-img
